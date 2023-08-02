@@ -20,9 +20,8 @@ const BannerText = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   color: black;
-  font-size: 24px;
+  font-size: 2vw;
   text-align: center;
-  padding: 20px;
 `
 
 interface BannerProps {
