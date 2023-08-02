@@ -20,12 +20,6 @@ const ListaMenu = styled.ul`
   align-items: center; /* Alinhar os itens verticalmente */
 `
 
-const ParagrafoEstilizado = styled.p`
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-`
-
 export default function Cabecalho() {
   return (
     <>
@@ -33,7 +27,9 @@ export default function Cabecalho() {
         <Container>
           <Row align="center">
             <Col xs={12} sm={12} md={6} lg={6}>
-              <img src={logo} alt="" />
+              <Link to="/">
+                <img src={logo} alt="" />
+              </Link>
             </Col>
             <Col xs={12} sm={12} md={6} lg={6}>
               <ListaMenu>

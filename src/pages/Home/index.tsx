@@ -1,7 +1,5 @@
 import styled from "@emotion/styled"
 import Banner from "../../components/Banner"
-import Cabecalho from "../../components/Cabecalho"
-import Rodape from "../../components/Rodape"
 import { Col, Container, Row } from "react-grid-system"
 
 import BannerHome from "../../assets/1 - Banner -Homepage.png"
@@ -48,7 +46,7 @@ export default function Home() {
   return (
     <>
       <PaginaEstilizada>
-        <Cabecalho />
+      
         <Banner
           URLimagem={BannerHome}
           texto="Boas-vindas ao #CodeChella2023!"
@@ -102,7 +100,7 @@ export default function Home() {
         </Container>
 
         <BannerFim />
-        <Rodape />
+       
       </PaginaEstilizada>
     </>
   )
