@@ -6,6 +6,10 @@
   font-family: Raleway, sans-serif;
 }
 
+body {
+  background: linear-gradient(#bfdae6 15%, #fcf0dd 50%, #facf9d 100%);
+}
+
 button {
   cursor: pointer;
 }
