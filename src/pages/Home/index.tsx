@@ -39,6 +39,46 @@ const TextoContainer = styled.div`
 `
 
 export default function Home() {
+  const BandasSabado1 = [
+    { texto: "Python Maiden" },
+    { texto: "Apollo Client 2001" },
+    { texto: "Bon Java" },
+    { texto: "NickCallback" },
+  ]
+
+  const BandasSabado2 = [
+    { texto: "Linkin Promises" },
+    { texto: "Fullstack Fighters" },
+    { texto: "Papa React" },
+    { texto: "Angular in Chains" },
+  ]
+
+  const BandasSabado3 = [
+    { texto: "Agnostic Front-end" },
+    { texto: "SlipkNode" },
+    { texto: "Pink Flutter" },
+    { texto: "Kiss" },
+  ]
+
+  const BandasDomingo1 = [
+    { texto: "Dua Lib" },
+    { texto: "The Backnd" },
+    { texto: "CSS Styles" },
+    { texto: "DJ Query" },
+    { texto: "ArrayAna Grande" },
+  ]
+  const BandasDomingo2 = [
+    { texto: "Miley Cypress" },
+    { texto: "The Bootstrap Boys" },
+    { texto: "Json Derulo" },
+    { texto: "CloudPlay" },
+    { texto: "Dev Lovato" },
+  ]
+  const BandasDomingo3 = [
+    { texto: "Kylie MiLOG" },
+    { texto: "Jenkins Brothers" },
+    { texto: "Rubycat Dolls" },
+  ]
   return (
     <>
       <Banner URLimagem={BannerHome} texto="Boas-vindas ao #CodeChella2023!" />
@@ -75,16 +115,16 @@ export default function Home() {
         <Shows
           tituloprincipal="SÁBADO <11/03>"
           titulo="System of a DOM"
-          p1="Python Maiden Apollo Client 2001 Bon Java NickCallback"
-          p2="Linkin Promises Fullstack Fighters Papa React Angular in Chains"
-          p3="Agnostic Front-end SlipkNode Pink Flutter Kiss"
+          p1={BandasSabado1.map((banda) => banda.texto).join(" ")}
+          p2={BandasSabado2.map((banda) => banda.texto).join(" ")}
+          p3={BandasSabado3.map((banda) => banda.texto).join(" ")}
         />
         <Shows
           tituloprincipal="DOMINGO <12/03>"
           titulo="Lana Del Ploy"
-          p1="Dua Lib The Backnd CSS Styles DJ Query ArrayAna Grande"
-          p2="Miley Cypress The Bootstrap Boys Json Derulo CloudPlay Dev Lovato"
-          p3="Kylie MiLOG Jenkins Brothers Rubycat Dolls"
+          p1={BandasDomingo1.map((banda) => banda.texto).join(" ")}
+          p2={BandasDomingo2.map((banda) => banda.texto).join(" ")}
+          p3={BandasDomingo3.map((banda) => banda.texto).join(" ")}
         />
       </Container>
 

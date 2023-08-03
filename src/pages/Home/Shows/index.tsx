@@ -3,7 +3,7 @@ import { Col } from "react-grid-system"
 
 const TextoCentralizado = styled.div`
   text-align: center;
-  line-height: 2.3;
+  line-height: 2.4;
   margin-bottom: 20px;
 `
 
@@ -39,9 +39,9 @@ export default function Shows({
           </TituloBackground>
           <h1>{titulo}</h1>
 
-          <p style={{ fontSize: "28px", fontWeight: "bold" }}>{p1}</p>
-          <p style={{ fontSize: "20px", fontWeight: "bold" }}>{p2}</p>
-          <p style={{ fontSize: "18px" }}>{p3}</p>
+          <p style={{ fontSize: "30px", fontWeight: "bold" }}>{p1}</p>
+          <p style={{ fontSize: "23px", fontWeight: "bold" }}>{p2}</p>
+          <p style={{ fontSize: "19px" }}>{p3}</p>
         </Col>
       </TextoCentralizado>
     </>
