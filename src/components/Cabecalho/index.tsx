@@ -52,7 +52,7 @@ export default function Cabecalho() {
                 </li>
                 <li>
                   <Link
-                    to="/info"
+                    to="/infogeral"
                     style={{ color: "white", textDecoration: "none" }}
                   >
                     Informações

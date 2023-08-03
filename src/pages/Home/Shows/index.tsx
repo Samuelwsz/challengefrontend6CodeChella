@@ -37,7 +37,7 @@ export default function Shows({
           <TituloBackground>
             <h1 style={{ color: "white" }}>{tituloprincipal}</h1>
           </TituloBackground>
-          <h1>{titulo}</h1>
+          <h1 style={{ fontSize: "35px" }}>{titulo}</h1>
 
           <p style={{ fontSize: "30px", fontWeight: "bold" }}>{p1}</p>
           <p style={{ fontSize: "23px", fontWeight: "bold" }}>{p2}</p>

@@ -111,7 +111,11 @@ export default function Home() {
             </BotaoEstilizado>
           </Col>
         </Row>
-        <h1 style={{ textAlign: "center", padding: "20px 0" }}>/ Line-Up /</h1>
+        <h1
+          style={{ textAlign: "center", padding: "20px 0", fontSize: "36px" }}
+        >
+          / Line-Up /
+        </h1>
         <Shows
           tituloprincipal="SÁBADO <11/03>"
           titulo="System of a DOM"
