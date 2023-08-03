@@ -60,7 +60,7 @@ export default function Cabecalho() {
                 </li>
                 <li>
                   <Link
-                    to="/ingresso"
+                    to="/ingressos"
                     style={{ color: "white", textDecoration: "none" }}
                   >
                     Ingresso

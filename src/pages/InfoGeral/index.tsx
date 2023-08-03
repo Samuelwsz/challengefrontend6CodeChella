@@ -11,11 +11,11 @@ export default function InfoGeral() {
 
       <Container>
         <h1
-          style={{ textAlign: "center", padding: "20px 0", fontSize: "34px" }}
+          style={{ textAlign: "center", fontSize: "34px", marginTop: "30px" }}
         >
           Perguntas Frequentes:
         </h1>
-        <Row align="center" justify="center">
+        <Row align="center" justify="center" style={{ margin: "30px 0" }}>
           <Col>
             <FaqItem
               pergunta="Quais serão as atrações?"

@@ -4,6 +4,7 @@ import Experiencia from "../pages/Experiencia"
 import PagePadrao from "../pages/PaginaPadrao"
 import Setores from "../pages/Setores"
 import InfoGeral from "../pages/InfoGeral"
+import Ingressos from "../pages/Ingressos"
 
 export const router = createBrowserRouter([
   {
@@ -14,6 +15,7 @@ export const router = createBrowserRouter([
       { path: "/experiencia", element: <Experiencia /> },
       { path: "/setores", element: <Setores /> },
       { path: "/infogeral", element: <InfoGeral /> },
+      { path: "/ingressos", element: <Ingressos /> },
     ],
   },
 ])
