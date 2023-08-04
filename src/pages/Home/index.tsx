@@ -7,6 +7,7 @@ import HomeImage from "../../assets/HomeImage.png"
 import IconBotao from "../../assets/IconeBotao.svg"
 import Shows from "./Shows"
 import BannerFim from "./BannerDoFim"
+import Botao from "../../components/Botao"
 
 const ImgEstilizado = styled.img`
   width: 100%;
@@ -101,14 +102,7 @@ export default function Home() {
                 </p>
               </TextoContainer>
             </div>
-            <BotaoEstilizado>
-              Comprar Ingresso!
-              <img
-                src={IconBotao}
-                style={{ marginLeft: "15px" }}
-                alt="icone botao"
-              />
-            </BotaoEstilizado>
+            <Botao imagem={IconBotao} titulo="  Comprar Ingresso!" />
           </Col>
         </Row>
         <h1

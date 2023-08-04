@@ -1,8 +1,11 @@
 import { useState, ChangeEvent, FormEvent } from "react"
+import { Col, Container, Row } from "react-grid-system"
 import styled from "@emotion/styled"
 import Banner from "../../components/Banner"
+import Botao from "../../components/Botao"
+
 import BannerIngresso from "../../assets/5 - Banner - garanta seu ingresso.png"
-import { Col, Container, Row } from "react-grid-system"
+import IconSeta from "./Seta.svg"
 
 interface FormData {
   nome: string
@@ -125,9 +128,9 @@ export default function Ingressos() {
               />
             </Col>
           </Row>
-          <button type="submit" style={{ marginTop: "30px" }}>
-            Enviar
-          </button>
+          <div style={{ marginTop: "30px" }}>
+            <Botao imagem={IconSeta} titulo="Avançar!" tipo="submit" />
+          </div>
         </Form>
       </Container>
     </>
