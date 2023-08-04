@@ -13,27 +13,6 @@ const ImgEstilizado = styled.img`
   width: 100%;
 `
 
-const BotaoEstilizado = styled.button`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 20px;
-  margin: auto;
-  border: none;
-  background-color: #2e7ba2;
-  color: #fff;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 8px;
-  box-shadow: 6px 0 0 #2e7ba2;
-  transition: background-color 0.3s, box-shadow 0.3s;
-
-  &:hover {
-    background-color: #2e7ba2;
-    box-shadow: 10px 0 0 #2e7ba2;
-  }
-`
-
 const TextoContainer = styled.div`
   padding: 20px 0;
   text-align: center;
