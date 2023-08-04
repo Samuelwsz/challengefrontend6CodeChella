@@ -6,6 +6,7 @@ import Botao from "../../components/Botao"
 
 import BannerIngresso from "../../assets/5 - Banner - garanta seu ingresso.png"
 import IconSeta from "./Seta.svg"
+import { Link } from "react-router-dom"
 
 interface FormData {
   nome: string
@@ -128,8 +129,10 @@ export default function Ingressos() {
               />
             </Col>
           </Row>
-          <div style={{ marginTop: "30px" }}>
-            <Botao imagem={IconSeta} titulo="Avançar!" tipo="submit" />
+          <div style={{ margin: "30px 0" }}>
+            <Link to="/ingressos/ingressoadquirido">
+              <Botao imagem={IconSeta} titulo="Avançar!" tipo="submit" />
+            </Link>
           </div>
         </Form>
       </Container>

@@ -5,6 +5,7 @@ import PagePadrao from "../pages/PaginaPadrao"
 import Setores from "../pages/Setores"
 import InfoGeral from "../pages/InfoGeral"
 import Ingressos from "../pages/Ingressos"
+import IngressoAdquirido from "../pages/Ingressos/IngressoAdquirido"
 
 export const router = createBrowserRouter([
   {
@@ -16,6 +17,13 @@ export const router = createBrowserRouter([
       { path: "/setores", element: <Setores /> },
       { path: "/infogeral", element: <InfoGeral /> },
       { path: "/ingressos", element: <Ingressos /> },
+      { path: "/ingressos/ingressoadquirido", element: <IngressoAdquirido /> },
     ],
   },
 ])
+/* children: [
+          {
+            path: "/ingressos/ingressoadquirido",
+            element: <IngressoAdquirido />,
+          },
+        ],*/
