@@ -6,6 +6,8 @@ import BannerIngressoAdquirido from "../../../assets/6 - Banner - seu ingresso e
 import LogoEscura from "../../../assets/LogoEscuro.svg"
 import IconChellaClaro from "../../../assets/IconChellaClaro.svg"
 import QrCode from "../../../assets/Qr code 1.png"
+import { useFormContext } from "../../../Context/ContextIngresso"
+import { format, parseISO } from "date-fns"
 
 const DivHeader = styled.div`
   display: flex;
@@ -28,6 +30,12 @@ const DivConteudo = styled.div`
 `
 
 export default function IngressoAdquirido() {
+  const { formData } = useFormContext()
+
+  const dataFormatada = formData.data
+    ? format(parseISO(formData.data), "dd/MM")
+    : ""
+
   return (
     <>
       <Banner
@@ -60,16 +68,15 @@ export default function IngressoAdquirido() {
               style={{
                 fontWeight: "bold",
                 lineHeight: "4",
-                marginTop: "-40px",
+                marginTop: "-10px",
               }}
             >
-              Nome
+              {formData.nome}
             </h3>
             <DivConteudo>
-              <p>a</p>
-              <p>a</p>
-              <p>a</p>
-              <p>a</p>
+              <p>Tipo: {formData.tipo}</p>
+              <p>Data: {dataFormatada}</p>
+              <p>Local: São Paulo-SP</p>
             </DivConteudo>
           </Col>
         </Row>

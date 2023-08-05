@@ -6,6 +6,7 @@ import Setores from "../pages/Setores"
 import InfoGeral from "../pages/InfoGeral"
 import Ingressos from "../pages/Ingressos"
 import IngressoAdquirido from "../pages/Ingressos/IngressoAdquirido"
+import { FormProvider } from "../Context/ContextIngresso"
 
 export const router = createBrowserRouter([
   {
@@ -16,8 +17,23 @@ export const router = createBrowserRouter([
       { path: "/experiencia", element: <Experiencia /> },
       { path: "/setores", element: <Setores /> },
       { path: "/infogeral", element: <InfoGeral /> },
-      { path: "/ingressos", element: <Ingressos /> },
-      { path: "/ingressos/ingressoadquirido", element: <IngressoAdquirido /> },
+
+      {
+        path: "/ingressos",
+        element: (
+          <FormProvider>
+            <Ingressos />
+          </FormProvider>
+        ),
+      },
+      {
+        path: "/ingressos/ingressoadquirido",
+        element: (
+          <FormProvider>
+            <IngressoAdquirido />
+          </FormProvider>
+        ),
+      },
     ],
   },
 ])

@@ -1,4 +1,4 @@
-import { useState, ChangeEvent, FormEvent } from "react"
+import { ChangeEvent, FormEvent } from "react"
 import { Col, Container, Row } from "react-grid-system"
 import styled from "@emotion/styled"
 import Banner from "../../components/Banner"
@@ -7,13 +7,7 @@ import Botao from "../../components/Botao"
 import BannerIngresso from "../../assets/5 - Banner - garanta seu ingresso.png"
 import IconSeta from "./Seta.svg"
 import { Link } from "react-router-dom"
-
-interface FormData {
-  nome: string
-  email: string
-
-  data: string
-}
+import { useFormContext } from "../../Context/ContextIngresso"
 
 const Form = styled.form`
   width: 70%;
@@ -47,24 +41,22 @@ const ParagrafoEstilizado = styled.p`
 `
 
 export default function Ingressos() {
-  const [formData, setFormData] = useState<FormData>({
-    nome: "",
-    email: "",
-    data: "",
-  })
+  const { formData, setFormData } = useFormContext()
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     const { name, value } = e.target
     setFormData({ ...formData, [name]: value })
   }
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    console.log(formData)
     setFormData({
       nome: "",
       email: "",
       data: "",
+      tipo: "",
     })
   }
 
@@ -110,7 +102,12 @@ export default function Ingressos() {
           <Row>
             <Col xs={12} sm={12} md={6} lg={6} style={{ marginTop: "30px" }}>
               <ParagrafoEstilizado>Tipo de ingresso</ParagrafoEstilizado>
-              <SelectEstilizado name="tipo" required>
+              <SelectEstilizado
+                name="tipo"
+                value={formData.tipo}
+                onChange={handleChange}
+                required
+              >
                 <option value="">Tipo de ingresso</option>
                 <option value="ingresso1">Ingresso 1</option>
                 <option value="ingresso2">Ingresso 2</option>

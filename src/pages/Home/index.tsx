@@ -8,6 +8,7 @@ import IconBotao from "../../assets/IconeBotao.svg"
 import Shows from "./Shows"
 import BannerFim from "./BannerDoFim"
 import Botao from "../../components/Botao"
+import { Link } from "react-router-dom"
 
 const ImgEstilizado = styled.img`
   width: 100%;
@@ -81,7 +82,9 @@ export default function Home() {
                 </p>
               </TextoContainer>
             </div>
-            <Botao imagem={IconBotao} titulo="  Comprar Ingresso!" />
+            <Link to="/ingressos" style={{ textDecoration: "none" }}>
+              <Botao imagem={IconBotao} titulo="  Comprar Ingresso!" />
+            </Link>
           </Col>
         </Row>
         <h1
