@@ -44,7 +44,7 @@ export default function Rodape() {
             <Col xs={12} sm={4} md={4} lg={4}></Col>
             <Col xs={12} sm={4} md={4} lg={4}>
               <div style={{ margin: "15px 0 0 0" }}>
-                <p>Desenvolvido por Alura.</p>
+                <p>Desenvolvido por Alura / Samuel.</p>
                 <br />
                 <p>Projeto fictício sem fins comerciais.</p>
               </div>

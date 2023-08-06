@@ -26,7 +26,7 @@ interface FormProviderProps {
   children: ReactNode
 }
 
-export const FormProvider: React.FC<FormProviderProps> = ({ children }) => {
+export const FormProvider = ({ children }: FormProviderProps) => {
   const [formData, setFormData] = useState<FormData>({
     nome: "",
     email: "",

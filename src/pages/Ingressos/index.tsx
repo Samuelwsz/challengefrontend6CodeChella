@@ -99,8 +99,8 @@ export default function Ingressos() {
               />
             </Col>
           </Row>
-          <Row>
-            <Col xs={12} sm={12} md={6} lg={6} style={{ marginTop: "30px" }}>
+          <Row align="center">
+            <Col xs={12} sm={12} md={12} lg={6} style={{ marginTop: "30px" }}>
               <ParagrafoEstilizado>Tipo de ingresso</ParagrafoEstilizado>
               <SelectEstilizado
                 name="tipo"
@@ -115,7 +115,7 @@ export default function Ingressos() {
               </SelectEstilizado>
             </Col>
 
-            <Col xs={12} sm={12} md={6} lg={6} style={{ marginTop: "30px" }}>
+            <Col xs={12} sm={12} md={12} lg={6} style={{ marginTop: "30px" }}>
               <ParagrafoEstilizado>Data de nascimento:</ParagrafoEstilizado>
               <InputEstilizado
                 type="date"
