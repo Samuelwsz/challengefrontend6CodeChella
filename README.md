@@ -1,27 +1,28 @@
-# React + TypeScript + Vite
+## Desafio CodeChella
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Challenge front end 6 da Alura
+## Iniciando o Projeto
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+instalar as dependências do projeto
+```
+npm i
+```
+iniciar o servidor de desenvolvimento
+```
+npm run dev
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Tecnologias Utilizadas
+<h3>React</h3>
+<h3>React router dom</h3>
+<h3>TypeScript</h3>
+<h3>Emotion</h3>
+<h3>Vite</h3>
+
+## Design no figma
+
+[Link](https://www.figma.com/file/xHLPBeA2ujaXbBjHMK9xh7/CodeChella-%7C-Challenge-I---Front-end-2023?type=design&mode=design&t=p9U6nTWroXYs5NQU-0)
+
+## Projeto finalizado
+
+[Link do projeto]()
