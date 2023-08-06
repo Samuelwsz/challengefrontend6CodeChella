@@ -25,4 +25,4 @@ npm run dev
 
 ## Projeto finalizado
 
-[Link do projeto]()
+[Link do projeto](https://challengefrontend6-code-chella.vercel.app/)
